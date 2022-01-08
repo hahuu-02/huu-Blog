@@ -1,0 +1,13 @@
+.app {
+    background: linear-gradient(to right bottom, #bfe9f0, #de40ed);;
+    overflow: hidden;
+    height: 3000px;
+}
+
+.app__header {
+    top: 60px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    width: 90%;
+    height: 200px;
+    display: flex;
+}
