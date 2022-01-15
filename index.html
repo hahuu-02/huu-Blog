@@ -9,40 +9,390 @@
     <link rel="stylesheet" href="./assests/css/base.css">
     <link rel="stylesheet" href="./assests/css/gird.css">
     <link rel="stylesheet" href="./assests/css/main.css">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+   
+
 </head>
 <body>
-    <div class="app gird wine">
-        <div class="app__header row">
-            <div class="app__header-user">
-                <div class="header__user-avt">
-
-                </div>
-
-                <div class="header__user-info">
-                    <div class="header__info-intro">
-
-                    </div>
-
-                    <div class="header__info-social">
-                        
-                    </div>
+    <div class="main ">
+        <div class="app grid wide">
+            <!-- Mở đầu -->
+            <div class="app__title row">
+                <div class="huu">
+                    Nguyễn Hà Hữu
                 </div>
             </div>
 
-            <div class="app__header-contact">
-                <ul class="header__contact-item">
+            <!--Header  -->
+            <div class="app__header row">
+                <div class="app__header-user">
+                    <div class="header__user-avt">
+                        <img src="./assests/img/LGPR4743.JPEG" alt="" class="header__user-img">
+                    </div>
+    
+                    <div class="header__user-info">
+                        <div class="header__info-intro">
+                            <h2 class="header__info-name">Nguyễn Hà Hữu</h2>
+                            <span class="header__info-worker">Tôi là Developer</span>
+                        </div>
+    
+                        <div class="header__info-social">
+                            <ul class="header__social-list">
+                                <li class="header__social-item">
+                                    <a href="#" class="header__social-link circle--btn icon--facebook">
+                                        <i class="bi bi-facebook header__social-icon"></i>
+                                    </a>
 
+                                    <div class="icon--note">
+                                        <span class="icon--name">facebook</span>
+                                    </div>
+                                </li>
+
+                                <li class="header__social-item ">
+                                    <a href="#" class="header__social-link circle--btn icon--tiktok">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                                        </svg>
+                                    </a>
+
+                                    <div class="icon--note">
+                                        <span class="icon--name">Tiktok</span>
+                                    </div>
+                                </li>
+                                <li class="header__social-item ">
+                                    <a href="#" class="header__social-link circle--btn icon--instagram">
+                                        <i class="bi bi-instagram header__social-icon"></i>
+                                    </a>
+
+                                    <div class="icon--note">
+                                        <span class="icon--name">Instagram</span>
+                                    </div>
+                                </li>
+                                <li class="header__social-item ">
+                                    <a href="#" class="header__social-link circle--btn icon--github">
+                                        <i class="bi bi-github header__social-icon"></i>
+                                    </a>
+
+                                    <div class="icon--note">
+                                        <span class="icon--name">Github</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="app__header-contact">
+                    <ul class="header__contact-list">
+                        <li class="header__contact-item">
+                            <h3 class="header__contact-title">EMAIL</h3>
+                            <span class="header__contact-conten">hahuu01032k2@gmail.com</span>
+                        </li>
+
+                        <li class="header__contact-item">
+                            <h3 class="header__contact-title">SỐ ĐIÊN THOẠI</h3>
+                            <span class="header__contact-conten">0788062672</span>
+                        </li>
+                    </ul>
+
+                    <ul class="header__contact-list">
+                        <li class="header__contact-item">
+                            <h3 class="header__contact-title">NGÀY SINH</h3>
+                            <span class="header__contact-conten">01/03/2002</span>
+                        </li>
+
+                        <li class="header__contact-item">
+                            <h3 class="header__contact-title">QUÊ QUÁN</h3>
+                            <span class="header__contact-conten">Tam Dương - Vĩnh Phúc - Việt Nam</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app__sidebar">
+                <ul class="app__sidebar-list">
+                    <li class="app__sidebar-item active">
+                        <div class="app__sidebar-icon">
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/eszyyflr.json"
+                                trigger="morph"
+                                colors="primary:#263da3,secondary:#4e2099"
+                                style="width:65px;height:65px;">
+                            </lord-icon>
+                            <span class="app__sidebar-title">Bản Thân</span>
+                        </div>
+                    </li>
+
+                    <li class="app__sidebar-item">
+                        <div class="app__sidebar-icon">
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/wxnxiano.json"
+                                trigger="morph"
+                                colors="primary:#263da3,secondary:#4e2099"
+                                style="width:65px;height:65px">
+                            </lord-icon>                           
+                            <span class="app__sidebar-title">Học Vấn</span>
+                        </div>
+                    </li>
+
+                    <li class="app__sidebar-item">
+                        <div class="app__sidebar-icon">
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/iltqorsz.json"
+                                trigger="morph"
+                                colors="primary:#263da3,secondary:#4e2099"
+                                style="width:65px;height:65px;">
+                            </lord-icon>                           
+                            <span class="app__sidebar-title">Mục Tiêu</span>
+                        </div>
+                    </li>
+
+                    <li class="app__sidebar-item">
+                        <div class="app__sidebar-icon">
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/rjzlnunf.json"
+                                trigger="morph"
+                                colors="primary:#263da3,secondary:#4e2099"
+                                style="width:65px;height:65px">
+                            </lord-icon>
+                            <span class="app__sidebar-title">Sở Thích</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
 
-        <div class="app__sidebar">
+            <div class="app__container active">
+                <div class="app__container-translate active">
+                    <span class="container__translate-conten eng">English</span>
+                    <span class="container__translate-conten vn ">Vietnamese</span>
+                </div>
 
-        </div>
+                <div class="app__container-intro">
+                    <div class="container__intro-title language">
+                        <h3 class="intro__title-eng english">INTRODUCE</h3>
+                        <h3 class="intro__title-vn vietnamese">GIỚI THIỆU</h3>
+                    </div>
+                        <!-- INTROLDUCE -->
+                    <div class="container__intro-conten">
+                        <p class="intro__conten-eng">Hello every one, My name is Hữu</p>
+                        <p class="intro__conten-vn">
+                            Xin chào các bạn, mình tên là Nguyễn Hà Hữu. Hiện tại mình đang học tập và theo đuổi ngành Công nghệ thông tin của trường
+                            <br> <br>
+                            Hiện tại mình đang theo học khóa
+                        </p>
+                    </div>
+                </div>
 
-        <div class="app__container">
+                <div class="app__container-achive grid">
+                    <div class="container__achive-title">
+                        <h3 class="container__title-eng english"> I MADE IN </h3>
+                        <h3 class="container__title-vn vietnamese">MÌNH ĐÃ LÀM ĐƯỢC</h3>
+                    </div>
+                    <div class="container__achive-list row">
+                        <div class="col l-6 m-6 c-12">
+                            <div class="container__achive-item">
+                                <a href="" class="container__achive-link">
+                                    <img src="./data/img/zing-mp3.png" alt="" class="container__achive-img">
+                                </a>
+
+                                <h3 class="container__achive-name">Zing mp3</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="container__achive-item">
+                                <a href="" class="container__achive-link">
+                                    <img src="./data/img/zing-mp3.png" alt="" class="container__achive-img">
+                                </a>
+
+                                <h3 class="container__achive-name">Zing mp3</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="container__achive-item">
+                                <a href="" class="container__achive-link">
+                                    <img src="./data/img/zing-mp3.png" alt="" class="container__achive-img">
+                                </a>
+
+                                <h3 class="container__achive-name">Zing mp3</h3>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12">
+                            <div class="container__achive-item">
+                                <a href="https://hahuu-02.github.io/huu-mp3" class="container__achive-link" target="__blank">
+                                    <img src="./data/img/zing-mp3.png" alt="" class="container__achive-img">
+                                </a>
+
+                                <h3 class="container__achive-name">Zing mp3</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app__container-sayings">
+                    <div class="container__sayings-title language">
+                        <div class="english">Inspirational quotes</div>
+                        <div class="vietnamese">Những câu nói truyền cảm hứng với mình</div>
+                    </div>
+
+                    <div class="container__sayings-slide">
+                        <div class="slide__user active">
+                            <div class="slide__user-avt">
+                                <img src="./assests/img/LGPR4743.JPEG" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">Elos mark</h2>
+                                <p class="slide__conten-say">Thành công là bước đi từ thất bại này đến thất bại khác mà không mất đi sự nhiệt huyệt</p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/will.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">Shakespeare</h2>
+                                <p class="slide__conten-say"> “Ước mơ mà không kèm theo hành động thì dù hi vọng có cánh cũng không bao giờ bay tới đích.” </p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/elon-musk.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">Elon Musk</h2>
+                                <p class="slide__conten-say">"Thay vì làm những công việc đặc biệt một cách khác người, hãy hoàn thành chúng một cách hiệu quả nhất có thể."</p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/will.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">William Shakespeare</h2>
+                                <p class="slide__conten-say">"Một người ngốc sẽ tự cho mình là thông minh, thế nhưng một người thông minh thì họ luôn biết cách khiêm nhường"</p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/bill gate.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">Bill Gates</h2>
+                                <p class="slide__conten-say">"Tình yêu có thử thách, gian nan thì mới biết được lòng chân thành của họ ra sao. Vậy thì hãy đối diện với nó để biết được lòng chân thành của con người như thế nào"</p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/bill gate.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author">– Bill Gates</h2>
+                                <p class="slide__conten-say">“ Đừng so sánh bản thân với người khác. Làm như vậy là bạn đang tự xúc phạm mình đấy”</p>
+                            </div>
+                        </div>
+
+                        <div class="slide__user">
+                            <div class="slide__user-avt">
+                                <img src="./data/img/guria.jpg" alt="" class="slide__user-img">
+                            </div>
+
+                            <div class="slide__conten">
+                                <h2 class="slide__conten-author"> Ngạn ngữ Gruzia</h2>
+                                <p class="slide__conten-say">"Không phải chỉ có học tập mới dẫn đến sự thành công của con người. Thế nhưng học tập chính là cách tốt nhất để bạn có thể tạo ra được thành công bằng những cách đơn giản nhất."</p>
+                            </div>
+                        </div>
+                        <!-- Nút PREV -->
+                        <button class="prev--btn circle--btn">
+                            <i class="bi bi-chevron-left slide--icon"></i>
+                        </button>
+                        <button class="next--btn circle--btn">
+                            <i class="bi bi-chevron-right slide--icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="container__sayings-button">
+                        <div class="container__sayings-item">
+                            <span class="saying--btn active"></span> 
+                            <span class="saying--btn"></span> 
+                            <span class="saying--btn"></span> 
+                            <span class="saying--btn"></span> 
+                            <span class="saying--btn"></span> 
+                            <span class="saying--btn"></span> 
+                            <span class="saying--btn"></span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app__container education ">
+                <div class="education__title language">
+                    <h1 class="english">EDUCATION</h1>
+                    <h1 class="vn">HỌC VẤN</h1>
+                </div>
+
+                <div class="education__header ">
+                    <div class="education__header-title lanuage">
+                        <div class="education__header-title-icon">
+
+                        </div>
+                        <h2 class="english">SCHOOL</h2>
+                        <h2 class="vn">Giáo Dục</h2>
+                    </div>
+
+                    <ul class="education__list">
+                        <li class="education__item">
+                            <h2 class="education__item-title">Trường Cao Đẳng FPT</h2>
+                            <span class="education__item-note">09/2021</span>
+                            <p class="education__item-conten">
+                                Mình bắt đầu học ngành công nghệ thông tin từ tháng 09/2021 với một con số 0
+                                , và mình hướng đến là một Web Devoloper 
+                            </p>
+                        </li>
+
+                        <li class="education__item">
+                            <h2 class="education__item-title">F8</h2>
+                            <span class="education__item-note">09/2021</span>
+                            <p class="education__item-conten">
+                                Mình bắt đầu học ngành công nghệ thông tin từ tháng 09/2021 với một con số 0
+                                , và mình hướng đến là một Web Devoloper 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app__container">
+
+            </div>
+
+            <div class="app__container">
+
+            </div>
 
         </div>
     </div>
+
+
+    <script src="./data/js/main.js"></script>
 </body>
 </html>

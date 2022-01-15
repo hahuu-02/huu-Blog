@@ -1,0 +1,110 @@
+:root {
+    --white-color: #fff;
+    --white-color-2: #FFFFFF;
+    --text-color: #333;
+    
+    --text-color-2: rgba(250, 250, 250, 0.3);
+    --black-color: #000;
+    --primary-color: #E1306C;
+    --note-color: #949292;
+
+    --main__bg-color: linear-gradient(to right bottom, #bfe9f0, #de40ed);
+    --app__bg-color: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    --btn-bg: rgba(250, 250, 250, 0.01);
+    --conten-bg: #DAE9EE;
+
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ======================================================================= */
+/*  */
+
+@keyframes onrigth {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.circle--btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: var(--white-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.circle--btn:hover {
+    background-color: #dbd4b2;
+}
