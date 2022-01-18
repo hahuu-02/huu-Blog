@@ -101,29 +101,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .header__social-link {
     color: var(--black-color);
-    position: relative;
-}
-
-.icon--note {
-    top: 73%;
-    position: absolute;
-    padding: 6px;
-    background-color: chocolate;
-    border-radius: 20px;
-    opacity: 0;
-    transition: all 0.4s linear;
     
 }
 
+.icon--note {
+    top: 0;
+    position: absolute;
+    padding: 6px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear;
+    user-select: none;
+}
+
 .header__social-item:hover .icon--note {
-    top: 49%;
+    top: -100%;
     display: block;
     opacity: 1;
-    pointer-events: auto;
+    /* pointer-events: auto; */
 }
 
 .icon--note::after {
@@ -131,7 +131,6 @@
     content: "";
     height: 10px;
     width: 10px;
-    background-color: chocolate;
     bottom: -4px;
     left: 50%;
     transform: translateX(-50%) rotate(45deg);
@@ -148,23 +147,27 @@
 .header__social-icon {
     font-size: 1.2rem;
 }
-
-    .icon--facebook:hover {
+    .header__social-link:hover .icon--facebook,
+    .icon--note-fb, .icon--note-fb::after {
         background-color: rgb(59,89,153);
         color: var(--white-color);
     }
 
-    .icon--tiktok:hover {
+
+    .header__social-item:hover .icon--tiktok,
+    .icon--note-titok, .icon--note-titok::after {
         background-color: var(--text-color);
         color: var(--white-color);
     }
 
-    .icon--instagram:hover {
+    .header__social-item:hover .icon--instagram,
+    .icon--note-ins, .icon--note-ins::after {
         background-color: var(--primary-color);
         color: var(--white-color);
     }
 
-    .icon--github:hover {
+    .header__social-item:hover .icon--github,
+    .icon--note-github, .icon--note-github::after {
         background-color: var(--text-color);
         color: var(--white-color);
     }
@@ -208,7 +211,7 @@
 /* SIDEBAR */
 .app__sidebar {
     width: 180px;
-    height: 510px;
+    height: 600px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     border-radius: 30px;
     position: fixed;
@@ -470,7 +473,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    animation: slideIn linear 0.6s, slideOut linear 0.3s 6.6s forwards;
+    animation: slideIn linear 0.6s, slideOut linear 0.3s 6.69s forwards;
 
 }
 @keyframes slideIn {
@@ -486,7 +489,7 @@
 
 @keyframes slideOut {
     100% {
-        transform: translateX(40%);
+        transform: translateX(30%);
         opacity: 0;
     }
 }
@@ -583,7 +586,7 @@
 /* ========================================== */
 /* EDUCATION */
 .education {
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .education__title {
@@ -594,34 +597,306 @@
 }
 
 .education__header-title {
-    padding: 10px 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
+.education__header-title-img {
+    height: 40px;
+    width: auto;
+    padding-right: 10px;
+}
+/* ======== */
 
 .education__list {
+    padding: 4px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .education__item {
+    position: relative;
+}
 
+.education__item.pseudo::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(211, 212, 197);
+    width: 2px;
+    height: 150px;
+    top: 13%;
+    left: -2.8%;
+}
+.education__item-title::after {
+    position: absolute;
+    content: "";
+    top: 6%;
+    left: -3.5%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: 1;
+    box-shadow: 0 0 0 0.1875rem rgb(48 76 253 / 25%);;
 }
 
 .education__item + .education__item {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .education__item-title {
     color: var(--black-color);
     font-size: 1.4rem;
     font-weight: 600;
 }
+
+
+
+
 .education__item-note {
-    color: var(--text-color-2);
+    display: block;
+    margin: 6px 0;
+    color: var(--text-color);
 }
 .education__item-conten {
-    padding: 0 10px;
+    padding: 0 2px;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    /* font-weight: 600; */
     line-height: 1.6rem;
+}
+
+/* == */
+.education__conten {
+    padding: 10px 30px;
+}
+
+.education__conten-title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+/* == education__footer */
+.education__footer {
+    padding: 10px 30px;
+}
+
+.education__footer-title {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.education__footer-conten {
+    width: 100%;
+    margin: 24px 0 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education__footer--conten {
+    width: 90%;
+    height: 300px;
+    /* margin: 10px 0 40px 0; */
+    /* background-color: brown; */
+    border-radius: 20px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.education__footer-item {
+    width: 90%;
+    height: 26px;
+    background-color: rgba(226 230 231);
+    border-radius: 14px;
+}
+
+.education__footer-child {
+    height: 100%;
+    border-radius: 14px;
+    background-image: linear-gradient(to-right, #662D8C 20%,  #ED1E78 50%);
+    background-image: linear-gradient( 142.17deg,#3086FF 6.66%,#304CFD 91.48%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education__footer-child span {
+    color: var(--white-color);
+    font-size: 1.05rem;
+    margin: 0 10px;
+}
+
+
+/* ========================================= */
+.target {
+    /* height: 1000px; */
+}
+
+.target__conten {
+    padding: 10px 30px;
+}
+
+iframe {
+    border-radius: 10px;
+    height: auto;
+}
+
+/* ============================================== */
+/* SỞ THÍCH */
+.app__container.hobbies {
+    height: 1000px;
+}
+
+/*  */
+.hobbies__game {
+    padding: 10px 30px;
+}
+.hobbies__header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.hobbies__header-img {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    color: blue;
+}
+
+.hobbies__header-title {
+    display: block;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.hobbies__list {
+    margin: 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies__item {
+    padding: 2px;
+    height: 144px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    box-shadow: 0 6px 10px rgb(0 0 0 / 20%);
+    display: flex;
+    align-items: center;
+    transition: all linear 0.2s;
+    overflow: hidden;
+}
+
+.hobbies__item:hover {
+    transform: scale(1.0009);
+}
+
+.hobbies__item:hover .hobbies__item-img {
+    transform: scale(1.08);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.hobbies__item + .hobbies__item {
+    margin-top: 26px;
+}
+
+.hobbies__item-link {
+    margin-left: 4px;
+    width: 200px;
+    height: 100%;
+    display: flex;
+}
+
+.hobbies__item-img {
+    margin: auto;
+    border-radius: 10px;
+    width: 180px;
+    height: auto;
+    overflow: hidden;
+    transition: all linear 0.2s;
+}
+
+.hobbies__item-note {
+    height: 100%;
+    margin: 0 16px 0 8px;
+    flex: 1;
+}
+
+.hobbies__item-name {
+    height: 22px;
+    margin: 14px 0 2px 0;
+    color: var(--black-color);
+    font-size: 1.3rem;
+    font-weight: 800;
+    user-select: none;
+}
+.hobbies__item-conten {
+    color: var(--text-color-3);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    user-select: none;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+/*  */
+
+.hobbies__watchMV {
+    padding: 10px 30px;
+}
+
+
+/* ============================== */
+.app__container.story {
+    height: 1000px;
+}
+
+.story__news {
+    height: 50px;
+}
+.story__item {
+    padding: 20px;
+}
+.story__item-header {
+    height: 34px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.story__header-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.story__header-name {
+    flex: 1;
+    margin-left: 14px;
+}
+
+.story__header-icon {
+    height: 100%;
+    width: 40px;
+    float: right;
 }
